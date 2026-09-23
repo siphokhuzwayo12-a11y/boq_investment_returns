@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)file:///C:/Users/ASUS/OneDrive/Desktop/Hongjiali/MOD-Z2-01_%20Zero-Waste%20Bio-Conversion%20&%20Co-Gen%20Systems.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD-Z2-01: Zero-Waste Bio-Conversion &amp; Co-Gen Systems</title>
+    <style>
+        :root {
+            --bg-primary: #0a0e14;
+            --bg-card: #121820;
+            --bg-card-alt: #1a222d;
+            --accent-green: #00e676;
+            --accent-gold: #ffb300;
+            --accent-blue: #00e5ff;
+            --text-primary: #f0f4f8;
+            --text-secondary: #94a3b8;
+            --border-color: #24303f;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .presentation-container {
+            width: 100vw;
+            height: 100vh;
+            max-width: 1600px;
+            max-height: 900px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            background: radial-gradient(circle at top right, #1a2636 0%, var(--bg-primary) 60%);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        .brand-logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-logo::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-green);
+            border-radius: 2px;
+        }
+
+        .module-badge {
+            background: rgba(0, 230, 118, 0.1);
+            border: 1px solid var(--accent-green);
+            color: var(--accent-green);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .slide-viewport {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            animation: fadeIn 0.4s ease-in-out forwards;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+
+        .slide-subtitle {
+            font-size: 1.1rem;
+            color: var(--accent-gold);
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            position: relative;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-green);
+        }
+
+        .card-highlight {
+            border-top: 3px solid var(--accent-green);
+        }
+
+        .card-gold {
+            border-top: 3px solid var(--accent-gold);
+        }
+
+        .card-blue {
+            border-top: 3px solid var(--accent-blue);
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .card-body {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .metric-value {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--accent-green);
+            line-height: 1.1;
+            margin: 10px 0;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--bg-card-alt);
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        td {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+
+        tr:nth-child(even) td {
+            background-color: rgba(255, 255, 255, 0.01);
+        }
+
+        ul.tech-list {
+            list-style: none;
+        }
+
+        ul.tech-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        ul.tech-list li::before {
+            content: '■';
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+            font-size: 0.8rem;
+            top: 2px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .controls {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .btn {
+            background: var(--bg-card-alt);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--accent-green);
+            color: #000;
+            border-color: var(--accent-green);
+        }
+
+        .slide-counter {
+            font-weight: 600;
+            color: var(--accent-gold);
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .title-slide-content {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .title-slide-content h1 {
+            font-size: 3rem;
+            line-height: 1.15;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .meta-table {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 30px;
+        }
+
+        .meta-item {
+            text-align: center;
+        }
+
+        .meta-item .label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .meta-item .value {
+            font-size: 1rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="presentation-container">
+        <header>
+            <div class="brand-logo">Lwandile Engineering Projects</div>
+            <div class="module-badge">MOD-Z2-01 | NQF 3</div>
+        </header>
+
+        <div class="slide-viewport">
+
+            <!-- SLIDE 1 -->
+            <div class="slide">
+                <div class="title-slide-content">
+                    <p style="color: var(--accent-green); font-weight: 600; letter-spacing: 2px; margin-bottom: 10px;">TEACHABILITY FRAMEWORK</p>
+                    <h1>Zero-Waste Bio-Conversion &amp; Co-Gen Systems</h1>
+                    <p class="slide-subtitle" style="text-align: center;">Off-Grid Agricultural Industrial Engineering &amp; Energy Integration</p>
+                    
+                    <div class="meta-table">
+                        <div class="meta-item">
+                            <div class="label">SETA Standard</div>
+                            <div class="value">US 116115</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="label">NQF Level</div>
+                            <div class="value">Level 3</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="label">Credits &amp; Weight</div>
+                            <div class="value">12 Credits (15%)</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="label">Location Context</div>
+                            <div class="value">Kinross &amp; Secunda</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="slide">
+                <h2 class="slide-title">Executive Summary &amp; Baseline Objectives</h2>
+                <p class="slide-subtitle">Modular Off-Grid Energy &amp; High-Density Livestock Integration</p>
+                <div class="grid-2">
+                    <div class="card card-highlight">
+                        <div class="card-title">Closed-Loop Vision</div>
+                        <p class="card-body">Repurposes organic animal waste (manure) into high-purity methane fuel. Drives on-site co-generation systems to generate night-time electrical volts and direct subsurface radiant steam heat, achieving total utility grid independence.</p>
+                    </div>
+                    <div class="card card-gold">
+                        <div class="card-title">Bankable Yield Matrix</div>
+                        <div class="metric-value">ZAR 3.1M</div>
+                        <div class="metric-label">Total Asset CAPEX</div>
+                        <p class="card-body" style="margin-top: 15px;">Yields a 2.6-year investment payback period through highly insulated, zero-grid operational margins that insulate agricultural cash flows from rising power tariffs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="slide">
+                <h2 class="slide-title">Market Gaps &amp; Utility Vulnerability</h2>
+                <p class="slide-subtitle">Structural Deficits in Conventional Highveld Farming</p>
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-title" style="color: #ff5252;">Grid Deficit Exposure</div>
+                        <p class="card-body">Sustained Highveld blackouts disrupt automated mechanical ventilation systems and critical brooding heat cycles, leading to high shock mortalities.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-title" style="color: #ff5252;">Thermodynamic Volatility</div>
+                        <p class="card-body">Uninsulated, conventional barn envelopes allow freezing winter cold snaps, triggering severe hypothermia in piglets and broilers.</p>
+                    </div>
+                    <div class="card card-gold">
+                        <div class="card-title">The Retail Cost Trap</div>
+                        <p class="card-body">Relying on escalating retail utility tariffs for heavy space heating completely consumes gross farming profit margins during winter.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="slide">
+                <h2 class="slide-title">Closed-Loop Engineering Infrastructure</h2>
+                <p class="slide-subtitle">Unifying Biology with Co-Generation Engineering</p>
+                <div class="grid-3">
+                    <div class="card card-highlight">
+                        <div class="card-title">Passive Siphon Thermal Chimneys</div>
+                        <p class="card-body">Convective roof ridge chimneys leverage natural thermodynamic lift to reduce electric ventilation power draw to zero.</p>
+                    </div>
+                    <div class="card card-highlight">
+                        <div class="card-title">4-Pod Biosecurity Firewalls</div>
+                        <p class="card-body">Modular partition walls limit bio-exposure down to a maximum of 25% zone footprint per outbreak event.</p>
+                    </div>
+                    <div class="card card-highlight">
+                        <div class="card-title">Co-Generation Heat Thermal Sync</div>
+                        <p class="card-body">Diverts engine jacket thermal exhaust directly into sub-floor radiant steam heating manifolds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 5 -->
+            <div class="slide">
+                <h2 class="slide-title">Passive Thermodynamic Architecture</h2>
+                <p class="slide-subtitle">Highveld Climate Adaptation Logic</p>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-title">Structural Passive Design Elements</div>
+                        <ul class="tech-list">
+                            <li><strong>Optimal Solar Orientation:</strong> East-West axial alignment maximizes winter solar heat recovery along Northern facing walls.</li>
+                            <li><strong>Passive Convective Ventilation:</strong> Low-inlet cross-ventilation paired with high-ridge discharge slots.</li>
+                            <li><strong>Thermal Envelope Storage:</strong> High-density brickwork acts as a thermal battery, storing ambient heat during daylight hours.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-blue">
+                        <div class="card-title">Micro-Climate Control Impact</div>
+                        <p class="card-body">By eliminating mechanical cooling reliance during heatwaves and using zero-electricity thermal siphon channels, baseline power draw remains entirely flat year-round, avoiding expensive peak-demand utility penalties.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 6 -->
+            <div class="slide">
+                <h2 class="slide-title">Multi-Channel Business Revenue Pipelines</h2>
+                <p class="slide-subtitle">Diversified High-Velocity Agricultural Revenue</p>
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-title">Broiler Sprint Barn</div>
+                        <ul class="tech-list">
+                            <li>Staggered 6-wave poultry occupancy annually.</li>
+                            <li>5,760 broilers harvested per wave.</li>
+                            <li>Target Market Price: ZAR 38.00 / kg.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Swine Grower Pipeline</div>
+                        <ul class="tech-list">
+                            <li>3 batches/year of 160 grower pigs.</li>
+                            <li>Fatting from 7kg to 70kg carcass weight.</li>
+                            <li>Target Market Price: ZAR 32.00 / kg.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-highlight">
+                        <div class="card-title">Organic Bio-Solids</div>
+                        <ul class="tech-list">
+                            <li>High-nutrient anaerobic digestor discharge.</li>
+                            <li>Processed and bagged as bio-fertilizer.</li>
+                            <li>Creates secondary auxiliary margin stream.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 7 -->
+            <div class="slide">
+                <h2 class="slide-title">Consolidated Capital Ledger (CAPEX)</h2>
+                <p class="slide-subtitle">ZAR 3,100,000 Total Allocation Breakdown</p>
+                <div class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Asset Infrastructure Component</th>
+                                <th>CAPEX Value (ZAR)</th>
+                                <th>Engineering &amp; Risk Mitigation Function</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Poultry &amp; Swine Structural Shells</strong></td>
+                                <td>ZAR 1,220,000</td>
+                                <td>Establishes insulated thermal envelopes and passive ventilation channels.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>30kW/30kWh BESS &amp; Biogas Co-Gen</strong></td>
+                                <td>ZAR 1,070,000</td>
+                                <td>Supplies off-grid electrical volts and radiant steam floor-mats.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hydrology, Biosecurity &amp; ArIoT System</strong></td>
+                                <td>ZAR 810,000</td>
+                                <td>Inline UV water sanitizers, shower-in portals, and real-time alerts.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- SLIDE 8 -->
+            <div class="slide">
+                <h2 class="slide-title">Energy Self-Sufficiency &amp; Tariff Shield</h2>
+                <p class="slide-subtitle">Financial Safety &amp; Capital Amortization Logic</p>
+                <div class="grid-2">
+                    <div class="card card-gold">
+                        <div class="metric-label">Model Base Tariff Shield</div>
+                        <div class="metric-value">ZAR 1.80</div>
+                        <div class="metric-label">Saved per kWh Generated</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Preserving Investment Capital</div>
+                        <ul class="tech-list">
+                            <li><strong>Conservative Model:</strong> Financial projections lock in a baseline ZAR 1.80/kWh grid tariff saving rate.</li>
+                            <li><strong>Autonomous Sinking Fund:</strong> 100% of energy utility savings are funneled into a dedicated replacement reserve fund.</li>
+                            <li><strong>Upgrade Capability:</strong> Sinking fund fully finances battery &amp; inverter upgrades by Year 5 without secondary debt.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 9 -->
+            <div class="slide">
+                <h2 class="slide-title">5-Year Growth &amp; EBITDA Projections</h2>
+                <p class="slide-subtitle">Financial Resiliency via Locked Zero Utility Costs</p>
+                <div class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Financial Performance Year</th>
+                                <th>Projected EBITDA (ZAR)</th>
+                                <th>Operational Margin Drivers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Year 1 EBITDA</strong></td>
+                                <td>ZAR 1,180,000</td>
+                                <td>Initial yield ramp across 6 broiler waves &amp; swine batches.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Year 2 EBITDA</strong></td>
+                                <td>ZAR 1,280,000</td>
+                                <td>Process optimization &amp; bio-fertilizer commercialization.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Year 3 EBITDA</strong></td>
+                                <td>ZAR 1,400,000</td>
+                                <td>Full operational efficiency across closed-loop infrastructure.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Year 5 EBITDA</strong></td>
+                                <td>ZAR 1,500,000</td>
+                                <td>Maximum density yield with zero utility exposure.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- SLIDE 10 -->
+            <div class="slide">
+                <h2 class="slide-title">6-Month Launch Execution Roadmap</h2>
+                <p class="slide-subtitle">Phased Site Commissioning Timeline</p>
+                <div class="grid-3">
+                    <div class="card card-highlight">
+                        <div class="card-title">Months 1 - 3</div>
+                        <p class="card-title" style="color: var(--accent-green); font-size: 1rem;">Civil Infrastructure</p>
+                        <p class="card-body">Excavation, structural steel frames, and 2% drainage sub-floors.</p>
+                    </div>
+                    <div class="card card-highlight">
+                        <div class="card-title">Months 4 - 5</div>
+                        <p class="card-title" style="color: var(--accent-green); font-size: 1rem;">Energy Integration</p>
+                        <p class="card-body">Installing solar roof arrays, BESS, and biogas steam manifolds.</p>
+                    </div>
+                    <div class="card card-highlight">
+                        <div class="card-title">Month 6</div>
+                        <p class="card-title" style="color: var(--accent-green); font-size: 1rem;">Biosecurity &amp; Launch</p>
+                        <p class="card-body">Deep chemical sterilizations, ArIoT calibration, and initial livestock loading.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 11 -->
+            <div class="slide">
+                <h2 class="slide-title">JET Empowerment &amp; Social Dividends</h2>
+                <p class="slide-subtitle">Alignment with Just Energy Transition Frameworks</p>
+                <div class="grid-3">
+                    <div class="card card-gold">
+                        <div class="card-title">Skills Transition</div>
+                        <p class="card-body">Accredited green-tech training in bio-solar microgrid operations for local youth in Kinross &amp; Secunda mining communities.</p>
+                    </div>
+                    <div class="card card-gold">
+                        <div class="card-title">Inclusive Growth</div>
+                        <p class="card-body">Dedicated management development programs for women-led agricultural cooperatives in the Mpumalanga region.</p>
+                    </div>
+                    <div class="card card-gold">
+                        <div class="card-title">Community Alliances</div>
+                        <p class="card-body">Direct execution partnerships with local NPOs and community foundations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 12 -->
+            <div class="slide active">
+                <div class="title-slide-content">
+                    <p style="color: var(--accent-green); font-weight: 600; letter-spacing: 2px; margin-bottom: 10px;">INVESTMENT PROSPECTUS CERTIFIED</p>
+                    <h1 style="font-size: 2.5rem;">Total CAPEX: ZAR 3,100,000</h1>
+                    <p class="slide-subtitle" style="text-align: center; font-size: 1.5rem; color: #ffffff;">2.6 Years Payback Period</p>
+                    
+                    <div class="card card-highlight" style="margin-top: 30px; text-align: left;">
+                        <div class="grid-2">
+                            <div>
+                                <p class="card-title">Contact &amp; Communication</p>
+                                <p class="card-body">Lwandile.Projects@Industrial-Precision.com</p>
+                                <p class="card-body">siphokhuzwayo12@gmail.com</p>
+                            </div>
+                            <div>
+                                <p class="card-title">Execution Pipeline</p>
+                                <p class="card-body">Precision Alliance Development Pipeline | Just Energy Transition</p>
+                                <p class="card-body">Scapush Precision Execution Standard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div>Scapush Precision Execution | Lwandile Engineering Projects</div>
+            <div class="controls">
+                <button class="btn" id="prevBtn" onclick="changeSlide(-1)">Previous</button>
+                <span class="slide-counter" id="slideCounter">12 / 12</span>
+                <button class="btn" id="nextBtn" onclick="changeSlide(1)">Next</button>
+            </div>
+            <div>Prestige Cosmic Venture</div>
+        </footer>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slideCounter = document.getElementById('slideCounter');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+            slideCounter.textContent = `${index + 1} / ${slides.length}`;
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            } else if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight' || event.key === ' ') {
+                changeSlide(1);
+            } else if (event.key === 'ArrowLeft') {
+                changeSlide(-1);
+            }
+        });
+    </script>
+
+
+</body></html>
