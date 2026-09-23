@@ -1,5 +1,10 @@
 # 🏛️ Prestige Cosmic Venture | BOQ & Investment Returns Portal
 
+## 🌐 Live Production Portals
+| Portal / SCADA Dashboard | Live URL | Access Tier |
+| :--- | :--- | :--- |
+| **Prestige Cosmic Venture (Root Index)** | [Launch Portal](https://siphokhuzwayo12-a11y.github.io/boq_investment_returns/) | Public / Executive |
+| **Artefacts Deployment Hub** | [Launch Hub](https://siphokhuzwayo12-a11y.github.io/boq_investment_returns/boq-investments-returns/ARTEFACTS%20DEPLOYMENT%20HUB.html) | Confidential |
 > **Sovereign Bio-Solar Engine & Financial Yield Analytics**  
 > *Scapush Precision Standard • Lwandile Engineering Projects*
 
